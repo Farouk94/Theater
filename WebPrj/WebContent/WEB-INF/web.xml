@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+	
+	<servlet>
+
+		<servlet-name>book</servlet-name>
+
+		<servlet-class>com.hall.BookingHandler</servlet-class>
+
+	</servlet>
+
+
+	
+	<servlet-mapping>
+
+		<servlet-name>book</servlet-name>
+
+		<url-pattern>/BookingAction</url-pattern>
+
+	</servlet-mapping>
+
+
+	<servlet>
+
+		<servlet-name>shows</servlet-name>
+
+		<servlet-class>com.hall.EventDisplayController</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>shows</servlet-name>
+
+		<url-pattern>/DisplayShows</url-pattern>
+
+	</servlet-mapping>
+
+	<servlet>
+
+		<servlet-name>Payment</servlet-name>
+
+		<servlet-class>com.hall.PaymentController</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>Payment</servlet-name>
+
+		<url-pattern>/ProcessPayment</url-pattern>
+
+	</servlet-mapping>
+	
+	<servlet>
+
+		<servlet-name>submitCardDetails</servlet-name>
+
+		<servlet-class>com.hall.PaymentReceiver</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>submitCardDetails</servlet-name>
+
+		<url-pattern>/SubmitCardDetail</url-pattern>
+
+	</servlet-mapping>
+	
+	<servlet>
+
+		<servlet-name>getPayment</servlet-name>
+
+		<servlet-class>com.hall.PaymentSaver</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>getPayment</servlet-name>
+
+		<url-pattern>/SubmitPayment</url-pattern>
+
+	</servlet-mapping>
+	
+	<servlet>
+
+		<servlet-name>Register</servlet-name>
+
+		<servlet-class>com.hall.UserRegisterationController</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>Register</servlet-name>
+
+		<url-pattern>/RegisterUser</url-pattern>
+
+	</servlet-mapping>
+	
+	<servlet>
+
+		<servlet-name>Login</servlet-name>
+
+		<servlet-class>com.hall.UserLoginController</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>Login</servlet-name>
+
+		<url-pattern>/UserLogin</url-pattern>
+
+	</servlet-mapping>
+	
+	<servlet>
+
+		<servlet-name>adminLogin</servlet-name>
+
+		<servlet-class>com.hall.AdminLoginController</servlet-class>
+
+	</servlet>
+
+
+	<servlet-mapping>
+
+		<servlet-name>adminLogin</servlet-name>
+
+		<url-pattern>/AdminLogin</url-pattern>
+
+	</servlet-mapping>
+	
+</web-app>
